@@ -1,5 +1,10 @@
-import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 const navItems = [
   { label: "ABOUT US", href: "#about" },
@@ -15,8 +20,6 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="bg-background/80 backdrop-blur-md sticky top-0 z-50 shadow-soft">
       <div className="container mx-auto px-4 md:px-8">
@@ -43,40 +46,67 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="px-3 py-2 text-xs font-heading font-semibold text-foreground hover:text-primary transition-colors"
+                className="px-3 py-2 text-xs font-heading font-semibold text-foreground hover:text-primary transition-colors relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </a>
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="xl:hidden p-2 text-foreground hover:text-primary transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
+          {/* Mobile Menu - Sheet */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <button
+                className="xl:hidden p-2 text-foreground hover:text-primary transition-colors"
+                aria-label="Toggle menu"
+              >
+                <Menu className="w-6 h-6" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[280px] sm:w-[320px] p-0 bg-primary">
+              {/* Side Nav Header */}
+              <div className="p-6 border-b border-primary-foreground/20">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary-foreground flex items-center justify-center">
+                    <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2z"/>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-heading font-bold text-lg text-primary-foreground">MANILA WATER</span>
+                    <span className="text-xs text-primary-foreground/70 tracking-wider">CARE IN EVERY DROP</span>
+                  </div>
+                </div>
+              </div>
 
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <nav className="xl:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="px-4 py-3 text-sm font-heading font-semibold text-foreground hover:text-primary hover:bg-muted transition-colors rounded-md"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </div>
-          </nav>
-        )}
+              {/* Navigation Links */}
+              <nav className="flex flex-col py-4">
+                {navItems.map((item, index) => (
+                  <SheetClose asChild key={item.label}>
+                    <a
+                      href={item.href}
+                      className="group flex items-center px-6 py-3.5 text-sm font-heading font-semibold text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10 transition-all duration-200 relative ml-0 hover:ml-2"
+                      style={{
+                        animationDelay: `${index * 50}ms`,
+                      }}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-secondary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                      {item.label}
+                    </a>
+                  </SheetClose>
+                ))}
+              </nav>
+
+              {/* Footer */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-primary-foreground/20">
+                <p className="text-xs text-primary-foreground/60 text-center">
+                  © 2024 Manila Water Company
+                </p>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
