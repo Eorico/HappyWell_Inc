@@ -111,8 +111,10 @@ const Header = () => {
               {/* Footer section */}
               <div className="absolute bottom-0 left-0 right-0 p-5 border-t border-white/10">
                 <div className="space-y-2">
-                  <p className="text-xs text-white/50 font-heading">HOTLINE 1627</p>
-                  <p className="text-xs text-white/50">info@manilawater.com</p>
+                  <p className="text-xs text-white/50 font-heading">
+                    CAVITE HOTLINE: {"(046)402-6759 / (046)546-9175"} MANILA HOTLINE: {"(02)8519-4490"}
+                  </p>
+                  <p className="text-xs text-white/50">info@happywell.com.ph</p>
                 </div>
               </div>
             </SheetContent>
