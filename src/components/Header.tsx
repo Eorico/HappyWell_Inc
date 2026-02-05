@@ -19,6 +19,8 @@ const navItems = [
   { label: "CONTACT US", href: "#contact" },
 ];
 
+import happWellLogo from 'public/happyWell.png';
+
 const Header = () => {
   
   return (
@@ -30,7 +32,7 @@ const Header = () => {
             <div className="relative">
               <div className="w-12 h-12 rounded-full bg-[#19a556] flex items-center justify-center">
                  <img 
-                  src="public/happyWell.png" 
+                  src={happWellLogo} 
                   alt="happy well logo" 
                   className="w-12 h-12 object-contain"
                 />
