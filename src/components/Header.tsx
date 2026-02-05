@@ -13,29 +13,31 @@ const navItems = [
   { label: "BUSINESS UNITS", href: "#business" },
   { label: "SUSTAINABILITY", href: "#sustainability" },
   { label: "INVESTORS", href: "#investors" },
-  { label: "CORPORATE GOVERNANCE", href: "#governance" },
+  { label: "CORPORATE PARTNERS", href: "#partners" },
   { label: "CAREERS", href: "#careers" },
   { label: "VENDORS", href: "#vendors" },
   { label: "CONTACT US", href: "#contact" },
 ];
 
 const Header = () => {
+  
   return (
-    <header className="bg-background/80 backdrop-blur-md sticky top-0 z-50 shadow-soft">
+    <header className="bg-white/20 backdrop-blur-lg border border-white/30 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <svg className="w-8 h-8 text-primary-foreground" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2z"/>
-                  <ellipse cx="12" cy="15" rx="3" ry="4" fill="currentColor" opacity="0.3"/>
-                </svg>
+              <div className="w-12 h-12 rounded-full bg-[#19a556] flex items-center justify-center">
+                 <img 
+                  src="public/happyWell.png" 
+                  alt="happy well logo" 
+                  className="w-12 h-12 object-contain"
+                />
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl text-primary tracking-tight">MANILA WATER</span>
+              <span className="font-heading font-bold text-xl text-primary tracking-tight">HAPPY WELL INC.</span>
               <span className="text-xs text-muted-foreground tracking-widest">CARE IN EVERY DROP</span>
             </div>
           </a>

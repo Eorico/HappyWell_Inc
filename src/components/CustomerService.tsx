@@ -1,11 +1,14 @@
-import { ArrowRight, Users, Droplets, Building2 } from "lucide-react";
+import { ArrowRight, DollarSignIcon, Droplets, BuildingIcon, ListCheck, Settings, UserCheck2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import waterInfrastructure from "@/assets/water-infrastructure.jpg";
+import CusServ from "@/assets/cusServe.png";
 
 const stats = [
-  { icon: Users, value: "7.3M+", label: "Customers Served" },
-  { icon: Building2, value: "23", label: "Cities & Municipalities" },
-  { icon: Droplets, value: "24/7", label: "Water Service" },
+  { icon: BuildingIcon, value: "19+", label: "Construction and water tanks compliant\n with the National Water Resources Board\n the water distribution industry's regulating body." },
+  { icon: DollarSignIcon, value: "++", label: "Billing and Collections for water fees may\n be bundled with the Homeowner\n Associatio dues." },
+  { icon: Droplets, value: "24/7", label: "Periodic improvements of water facilities" },
+  { icon: ListCheck, value: "Licenses", label: "Application for permits, licenses, and\n electric power to expedite the operation \n of the water system." },
+  { icon: Settings, value: "24/7", label: "Regular maintenance and rehabilitation\n of equipment and water facilities." },
+  { icon: UserCheck2, value: "24/7", label: "Customer Service and water quality\n management." },  
 ];
 
 const CustomerService = () => {
@@ -15,12 +18,14 @@ const CustomerService = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <span className="text-sm font-heading font-semibold text-primary tracking-widest">CUSTOMER SERVICE</span>
+            <span className="text-sm font-heading font-semibold text-primary tracking-widest">OUR SERVICE</span>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mt-2 mb-6">
               We put customers at the heart of our business.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Manila Water provides water supply, wastewater, and sanitation services to over 7.3 million customers in 23 cities and municipalities of the East Zone of Metro Manila and Rizal Province.
+              Providing efficient water systems for communities can be a challeng.
+              Happy Well has the expertise and technical capabilities to be partner in
+              deploying complete water channels system from planning, design, to construction.
             </p>
 
             {/* Stats */}
@@ -44,7 +49,7 @@ const CustomerService = () => {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-teal rounded-2xl opacity-10 blur-xl" />
             <img
-              src={waterInfrastructure}
+              src={CusServ}
               alt="Manila Water Infrastructure"
               className="relative rounded-2xl shadow-medium w-full"
             />

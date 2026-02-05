@@ -23,7 +23,7 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#169350] text-primary-foreground">
       <div className="container mx-auto px-4 md:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
@@ -36,7 +36,7 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl tracking-tight">MANILA WATER</span>
+                <span className="font-heading font-bold text-xl tracking-tight">HAPPY WELL INC.</span>
                 <span className="text-xs text-primary-foreground/70 tracking-widest">CARE IN EVERY DROP</span>
               </div>
             </div>

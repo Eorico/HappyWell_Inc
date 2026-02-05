@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const IntegratedReport = () => {
   return (
-    <section className="py-20 bg-gradient-teal relative overflow-hidden">
+    <section className="py-20 bg-forest relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#19a55a] rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#19a55a] rounded-full blur-2xl" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -20,7 +20,7 @@ const IntegratedReport = () => {
             size="lg"
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold text-lg px-8 py-6 shadow-teal"
           >
-            Visit the 2024 Integrated Report Website
+            Visit the Integrated Report Website
             <ArrowUpRight className="w-5 h-5 ml-2" />
           </Button>
         </div>

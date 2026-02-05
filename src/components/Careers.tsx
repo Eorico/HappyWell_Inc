@@ -1,5 +1,6 @@
 import { ArrowRight, Briefcase, GraduationCap, Heart, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import team from '@/assets/team.png';
 
 const benefits = [
   { icon: TrendingUp, title: "Growth", description: "Career development" },
@@ -47,13 +48,7 @@ const Careers = () => {
           {/* Image/Visual */}
           <div className="relative">
             <div className="aspect-square bg-gradient-teal rounded-3xl flex items-center justify-center overflow-hidden">
-              <div className="text-center p-8">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-primary-foreground/20 backdrop-blur-sm flex items-center justify-center">
-                  <Briefcase className="w-16 h-16 text-primary-foreground" />
-                </div>
-                <h3 className="font-heading text-3xl font-bold text-primary-foreground mb-2">Join Our Team</h3>
-                <p className="text-primary-foreground/80">Be part of something meaningful</p>
-              </div>
+              <img src={team} alt="Our Team" className="w-full h-full object-cover" />
             </div>
             {/* Decorative Elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary rounded-2xl -z-10 opacity-50" />

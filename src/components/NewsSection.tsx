@@ -1,34 +1,38 @@
 import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import news1 from '@/assets/news1.jpeg'
+import news2 from '@/assets/news2.jpeg'
+import news3 from '@/assets/news3.jpeg'
+import news4 from '@/assets/news4.jpeg'
 
 const newsItems = [
   {
     id: 1,
-    title: "Manila Water switches to 100% Renewable Energy Retail Supply, marks first in the Philippine water sector",
+    title: "Happy Well Management and Collection Services Inc. Present the Walk the Line Program",
     date: "February 4, 2026",
-    excerpt: "Manila Water Company has taken a major step toward environmental sustainability while ensuring affordable water services for its East Zone operations.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&auto=format&fit=crop&q=60",
+    excerpt: "Happy Well Management and Collection Services Inc. (Happy Well) recently launched its Walk the Line Program, an initiative aimed at enhancing customer experience and service delivery.",
+    image: news1,
   },
   {
     id: 2,
-    title: "Manila Water's sewer line relocation in Quezon City nears completion",
+    title: "Happy Well blessed the company's launch opening of its new office in Imus Cavite",
     date: "February 3, 2026",
-    excerpt: "Manila Water is nearing the completion of the relocation of its existing sewer pipelines in Quezon City to support the Metro Manila Subway Project.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=60",
+    excerpt: "Happy Well Management and Collection Services Inc. (Happy Well) was blessed with the opening of its new office in Imus Cavite.",
+    image: news2,
   },
   {
     id: 3,
-    title: "La Mesa Ecopark celebrates landmark environmental achievements in 2025",
+    title: "Happy Well go to schools to donate bags and school supplies to students",
     date: "January 30, 2026",
-    excerpt: "Under the stewardship of the Manila Water Foundation, the La Mesa Ecopark proudly marks 2025 as an impactful year for the environment.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&auto=format&fit=crop&q=60",
+    excerpt: "Happy Well Management and Collection Services Inc. (Happy Well) visited several schools in the area to donate bags and school supplies to students.",
+    image: news3,
   },
   {
     id: 4,
-    title: "Manila Water schedules more barangays for desludging in February",
+    title: "Happy Well prepares the student school supplies donation for 2026",
     date: "January 29, 2026",
-    excerpt: "Manila Water is urging customers across the East Zone to prepare their homes and communities as it releases its desludging schedule for February 2026.",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=60",
+    excerpt: "Happy Well Management and Collection Services Inc. (Happy Well) is preparing to distribute school supplies and bags to students in the community.",
+    image: news4,
   },
 ];
 

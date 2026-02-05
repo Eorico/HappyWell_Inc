@@ -1,6 +1,6 @@
 import { ArrowRight, Award, Globe, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import waterDrop from "@/assets/water-drop.jpg";
+import AboutImg from "@/assets/aboutImg.png";
 
 const values = [
   { icon: Award, title: "Excellence", description: "Industry leader in water services" },
@@ -14,24 +14,27 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative order-2 lg:order-1">
+          <div className="relative h-97 order-2 lg:order-1">
             <div className="absolute -inset-4 bg-gradient-teal rounded-2xl opacity-10 blur-xl" />
             <img
-              src={waterDrop}
+              src={AboutImg}
               alt="Clean Water"
-              className="relative rounded-2xl shadow-medium w-full"
+              className="relative rounded-2xl shadow-medium w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
             />
           </div>
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <span className="text-sm font-heading font-semibold text-primary tracking-widest">ABOUT MANILA WATER</span>
+            <span className="text-sm font-heading font-semibold text-primary tracking-widest">ABOUT HAPPY WELL</span>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mt-2 mb-6">
-              We are committed to make a difference.
+              Building strong communities and happy homes.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Manila Water Company, Inc. is a publicly listed company that provides clean, safe water and sanitation services to our customers. Our extensive experience in the Philippine Water Sector ranges from water treatment and distribution to wastewater management and sanitation services.
-            </p>
+              Happy Well was founded in 2006 by a Group of Families, who had been in real
+              estate development for over 40 years. As developers, they were well aware of the 
+              problemss typically encountered with deploying the water system, and as such, decided to diversity
+              into business, to be able to serve their many thriving communities better.  
+            </p> 
 
             {/* Values */}
             <div className="space-y-4 mb-8">

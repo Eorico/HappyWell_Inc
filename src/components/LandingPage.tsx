@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { ChevronRight, Newspaper } from "lucide-react";
-import heroImage from "@/assets/hero-watershed.jpg";
+import landingPageBg from "@/assets/happyWellBg.png";
 
 const topStories = [
-  "Manila Water switches to 100% Renewable Energy Retail Supply, marks first in the Philippine water sector",
-  "Manila Water's sewer line relocation in Quezon City nears completion to support Metro Manila Subway Project",
-  "La Mesa Ecopark celebrates landmark environmental achievements in 2025",
+  "Happy Well Management and Collection Services Inc. Present the Walk the Line Program",
+  "Happy Well blessed the company's launch opening of its new office in Imus Cavite",
+  "Happy Well go to schools to donate bags and school supplies to students",
 ];
 
-const Hero = () => {
+const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src={landingPageBg}
           alt="Manila Water Watershed"
           className="w-full h-full object-cover"
         />
@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Main Headline */}
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 animate-fade-in">
-            Unwavering@28
+            #HAPPYWELL.INC
           </h1>
 
           {/* Top Stories Box */}
@@ -75,13 +75,14 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-8 h-12 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center pt-2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce text-center">
+        <div className="w-8 h-12 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center pt-2 mx-auto">
           <div className="w-1 h-3 bg-primary-foreground/70 rounded-full" />
         </div>
+        <h1 className="mt-2 text-sm opacity-80 text-white">Scroll Down</h1> 
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default LandingPage;

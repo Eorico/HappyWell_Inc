@@ -1,6 +1,6 @@
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import LandingPage from "@/components/LandingPage";
 import NewsSection from "@/components/NewsSection";
 import IntegratedReport from "@/components/IntegratedReport";
 import CustomerService from "@/components/CustomerService";
@@ -16,7 +16,7 @@ const Index = () => {
       <TopBar />
       <Header />
       <main>
-        <Hero />
+        <LandingPage />
         <NewsSection />
         <IntegratedReport />
         <CustomerService />

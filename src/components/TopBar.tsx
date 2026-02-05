@@ -2,7 +2,7 @@ import { Phone, Mail, Smartphone } from "lucide-react";
 
 const TopBar = () => {
   return (
-    <div className="bg-primary/95 backdrop-blur-sm text-primary-foreground py-2 px-4 md:px-8">
+    <div className="bg-[#19a55a] backdrop-blur-sm text-primary-foreground py-2 px-4 md:px-8">
       <div className="container mx-auto flex justify-between items-center text-sm">
         <div className="flex items-center gap-4">
           <a href="#" className="hover:text-secondary transition-colors">
@@ -25,15 +25,16 @@ const TopBar = () => {
         <div className="hidden md:flex items-center gap-6">
           <a href="tel:1627" className="flex items-center gap-2 hover:text-secondary transition-colors">
             <Phone className="w-4 h-4" />
-            <span>HOTLINE 1627</span>
+            <span>CAVITE HOTLINE: {"(046)402-6759 / (046)546-9175"} MANILA HOTLINE: {"(02)8519-4490"}</span>
+            
           </a>
           <a href="mailto:info@manilawater.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
             <Mail className="w-4 h-4" />
-            <span>info@manilawater.com</span>
+            <span>info@happywell.com.ph</span>
           </a>
           <a href="#" className="flex items-center gap-2 hover:text-secondary transition-colors">
             <Smartphone className="w-4 h-4" />
-            <span>Manila Water App</span>
+            <span>Happy Well App</span>
           </a>
         </div>
       </div>

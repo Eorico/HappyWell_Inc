@@ -3,19 +3,19 @@ import { ArrowUpRight } from "lucide-react";
 const businessUnits = [
   {
     id: 1,
-    name: "Manila Water Philippine Ventures",
+    name: "Happy Well Philippine Ventures",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=60",
     description: "Expanding water services across the Philippines",
   },
   {
     id: 2,
-    name: "Manila Water Asia Pacific",
+    name: "Happy Well Asia Pacific",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&auto=format&fit=crop&q=60",
     description: "Regional operations and partnerships",
   },
   {
     id: 3,
-    name: "Manila Water Infratech Solutions",
+    name: "Happy Well Infratech Solutions",
     image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=60",
     description: "Engineering and infrastructure development",
   },
