@@ -19,7 +19,7 @@ const navItems = [
   { label: "CONTACT US", href: "#contact" },
 ];
 
-import happWellLogo from '@/assets/happyWellBg.png';
+import happWellLogo from '@/assets/happyWell.png';
 
 const Header = () => {
   
