@@ -7,14 +7,14 @@ import {
 } from "@/components/ui/sheet";
 
 const navItems = [
-  { label: "ABOUT US", href: "#about" },
-  { label: "CUSTOMERS", href: "#customers" },
-  { label: "NEWS", href: "#news" },
-  { label: "BUSINESS UNITS", href: "#business" },
-  { label: "SUSTAINABILITY", href: "#sustainability" },
-  { label: "CORPORATE PARTNERS", href: "#partners" },
-  { label: "CAREERS", href: "#careers" },
-  { label: "CONTACT US", href: "#contact" },
+  { label: "ABOUT US", href: "/#about" },
+  { label: "CUSTOMERS", href: "/#customers" },
+  { label: "NEWS", href: "/#news" },
+  { label: "BUSINESS UNITS", href: "/business-units" },
+  { label: "SUSTAINABILITY", href: "/#sustainability" },
+  { label: "CORPORATE PARTNERS", href: "/corporate-partners" },
+  { label: "CAREERS", href: "/#careers" },
+  { label: "CONTACT US", href: "/contact" },
 ];
 
 import happWellLogo from '@/assets/happyWell.png';
