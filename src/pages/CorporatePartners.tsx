@@ -8,28 +8,28 @@ const partners = [
     id: 1,
     name: "Department of Health",
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&auto=format&fit=crop&q=60",
-    description: "Partnering for clean water access and public health initiatives across communities.",
+    description: "Partnering for clean water access and public health initiatives.",
     category: "Government",
   },
   {
     id: 2,
     name: "Local Government Units",
     logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&auto=format&fit=crop&q=60",
-    description: "Collaborative efforts with LGUs for infrastructure development and service delivery.",
+    description: "Collaborative efforts with LGUs for infrastructure development.",
     category: "Government",
   },
   {
     id: 3,
     name: "Philippine Water Works Association",
     logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&auto=format&fit=crop&q=60",
-    description: "Industry partnerships for water sector advancement and best practices.",
+    description: "Industry partnerships for water sector advancement.",
     category: "Industry",
   },
   {
     id: 4,
     name: "Environmental NGOs",
     logo: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=200&auto=format&fit=crop&q=60",
-    description: "Working together for environmental conservation and sustainable water management.",
+    description: "Environmental conservation and sustainable water management.",
     category: "NGO",
   },
   {
@@ -43,8 +43,22 @@ const partners = [
     id: 6,
     name: "Private Sector Partners",
     logo: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&auto=format&fit=crop&q=60",
-    description: "Strategic partnerships for technology and innovation in water services.",
+    description: "Technology and innovation in water services.",
     category: "Private",
+  },
+  {
+    id: 7,
+    name: "DENR Philippines",
+    logo: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&auto=format&fit=crop&q=60",
+    description: "Environmental protection and natural resources management.",
+    category: "Government",
+  },
+  {
+    id: 8,
+    name: "Asian Development Bank",
+    logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=200&auto=format&fit=crop&q=60",
+    description: "Funding partnerships for sustainable infrastructure projects.",
+    category: "Finance",
   },
 ];
 
@@ -101,7 +115,7 @@ const CorporatePartners = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {partners.map((partner) => (
               <div
                 key={partner.id}

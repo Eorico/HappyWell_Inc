@@ -1,4 +1,5 @@
 import { Menu } from "lucide-react";
+import { useState, useEffect } from "react";
 import {
   Sheet,
   SheetContent,
@@ -8,21 +9,35 @@ import {
 
 const navItems = [
   { label: "ABOUT US", href: "/#about" },
-  { label: "CUSTOMERS", href: "/#customers" },
-  { label: "NEWS", href: "/#news" },
+  { label: "CUSTOMERS", href: "/customers" },
+  { label: "NEWS", href: "/news" },
   { label: "BUSINESS UNITS", href: "/business-units" },
-  { label: "SUSTAINABILITY", href: "/#sustainability" },
+  { label: "SUSTAINABILITY", href: "/sustainability" },
   { label: "CORPORATE PARTNERS", href: "/corporate-partners" },
-  { label: "CAREERS", href: "/#careers" },
+  { label: "CAREERS", href: "/careers" },
   { label: "CONTACT US", href: "/contact" },
 ];
 
 import happWellLogo from '@/assets/happyWell.png';
 
 const Header = () => {
-  
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white/20 backdrop-blur-lg border border-white/30 sticky top-0 z-50 shadow-md">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? "bg-white shadow-md" 
+        : "bg-white/20 backdrop-blur-lg border border-white/30"
+    }`}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
