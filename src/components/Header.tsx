@@ -12,10 +12,8 @@ const navItems = [
   { label: "NEWS", href: "#news" },
   { label: "BUSINESS UNITS", href: "#business" },
   { label: "SUSTAINABILITY", href: "#sustainability" },
-  { label: "INVESTORS", href: "#investors" },
   { label: "CORPORATE PARTNERS", href: "#partners" },
   { label: "CAREERS", href: "#careers" },
-  { label: "VENDORS", href: "#vendors" },
   { label: "CONTACT US", href: "#contact" },
 ];
 
