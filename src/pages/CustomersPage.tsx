@@ -139,7 +139,7 @@ const CustomersPage = () => {
               <img
                 src={cusServe}
                 alt="Customer Service Team"
-                className="rounded-2xl shadow-strong w-full"
+                className="rounded-2xl shadow-strong w-full h-96 object-cover"
               />
             </div>
           </div>
