@@ -56,8 +56,10 @@ const BusinessUnits = () => {
                 </h3>
                 <p className="text-sm text-primary-foreground/80 mb-4">{unit.description}</p>
                 <div className="flex items-center gap-2 text-sm font-semibold text-secondary">
-                  Learn More
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <a href="/business-units">
+                    Learn More
+                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </a>
                 </div>
               </div>
             </a>

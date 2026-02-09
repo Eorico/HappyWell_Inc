@@ -38,13 +38,15 @@ const Sustainability = () => {
             ))}
           </div>
 
-          <Button
-            size="lg"
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold"
-          >
-            Explore Sustainability
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
+          <a href="/sustainability">
+            <Button
+              size="lg"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-heading font-bold"
+            >
+              Explore Sustainability
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

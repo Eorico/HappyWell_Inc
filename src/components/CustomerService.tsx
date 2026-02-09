@@ -39,10 +39,12 @@ const CustomerService = () => {
               ))}
             </div>
 
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
-              Learn More
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+            <a href="/customers">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
+                Learn More
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </a>
           </div>
 
           {/* Image */}

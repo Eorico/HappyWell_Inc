@@ -93,10 +93,12 @@ const NewsSection = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="font-heading font-semibold border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All News
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
+          <a href="/news">
+            <Button  variant="outline" size="lg" className="font-heading font-semibold border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              View All News
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>
