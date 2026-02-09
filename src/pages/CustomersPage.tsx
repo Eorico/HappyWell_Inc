@@ -45,8 +45,12 @@ const CustomersPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80">
-        <div className="container mx-auto px-4 md:px-8">
+      <section className="
+          relative py-20  
+          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/customer.png')]
+          bg-cover bg-center from-primary to-primary/80
+        ">
+        <div className="container mx-auto px-4 md:px-8 ">
           <div className="text-center text-primary-foreground">
             <span className="text-sm font-heading font-semibold tracking-widest opacity-80">CUSTOMER SERVICE</span>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mt-2 mb-4">

@@ -48,7 +48,12 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80">
+      <section className="
+          relative 
+          py-20 
+          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/careers.png')]
+          bg-cover bg-center from-primary to-primary/80
+        ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">
             <span className="text-sm font-heading font-semibold tracking-widest opacity-80">GET IN TOUCH</span>

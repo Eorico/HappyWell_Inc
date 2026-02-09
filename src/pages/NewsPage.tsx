@@ -52,7 +52,7 @@ const newsArticles = [
     id: 6,
     title: "Partnership with Local Government Units Strengthened",
     excerpt: "New memorandum of agreement signed to accelerate water infrastructure development in rural areas.",
-    image: "https://images.unsplash.com/photo-1577415124269-fc1140354fed?w=600&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=600&auto=format&fit=crop&q=60",
     date: "December 12, 2025",
     category: "Partnership",
   },
@@ -65,7 +65,11 @@ const NewsPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80">
+      <section className="
+          relative py-20 
+          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/news.png')]
+          bg-cover bg-center from-primary to-primary/80
+        ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">
             <span className="text-sm font-heading font-semibold tracking-widest opacity-80">LATEST UPDATES</span>

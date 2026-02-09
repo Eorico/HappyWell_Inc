@@ -2,63 +2,71 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Handshake, Building2, Users, Award } from "lucide-react";
+import parter1 from "@/assets/partner1.png";
+import parter2 from "@/assets/partner2.png";
+import parter3 from "@/assets/partner3.png";
+import parter4 from "@/assets/partner4.png";
+import parter5 from "@/assets/partner5.png";
+import parter6 from "@/assets/partner6.png";
+import parter7 from "@/assets/partner7.png";
+import parter8 from "@/assets/partner8.png";
 
 const partners = [
   {
     id: 1,
-    name: "Department of Health",
-    logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&auto=format&fit=crop&q=60",
-    description: "Partnering for clean water access and public health initiatives.",
-    category: "Government",
+    name: "Real Estate Developers",
+    logo: parter1,
+    description: "Real estate developers collaborating on water infrastructure projects.",
+    category: "CENQ",
   },
   {
     id: 2,
-    name: "Local Government Units",
-    logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&auto=format&fit=crop&q=60",
-    description: "Collaborative efforts with LGUs for infrastructure development.",
-    category: "Government",
+    name: "Business Corporations",
+    logo: parter2,
+    description: "Land Development and Corporate Social Responsibility initiatives.",
+    category: "LYNVILLE",
   },
   {
     id: 3,
-    name: "Philippine Water Works Association",
-    logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&auto=format&fit=crop&q=60",
-    description: "Industry partnerships for water sector advancement.",
-    category: "Industry",
+    name: "PARK HOMES INC.",
+    logo: parter3,
+    description: "A first that lasts in the Philippines.",
+    category: "PH FIRST",
   },
   {
     id: 4,
-    name: "Environmental NGOs",
-    logo: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=200&auto=format&fit=crop&q=60",
-    description: "Environmental conservation and sustainable water management.",
-    category: "NGO",
+    name: "LAND INC.",
+    logo: parter4,
+    description: "Sustainable urban development and housing projects.",
+    category: "MICARA LAND INC.",
   },
   {
     id: 5,
-    name: "Academic Institutions",
-    logo: "https://images.unsplash.com/photo-1562774053-701939374585?w=200&auto=format&fit=crop&q=60",
-    description: "Research collaborations and capacity building programs.",
-    category: "Education",
+    name: "PROPERTY COMPANY OF FRIENDS, INC.",
+    logo: parter5,
+    description: "Creating communities with care and excellence.",
+    category: "PRO FRIENDS",
   },
   {
     id: 6,
     name: "Private Sector Partners",
-    logo: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&auto=format&fit=crop&q=60",
+    logo: parter6,
     description: "Technology and innovation in water services.",
-    category: "Private",
+    category: "KA8NOS",
   },
   {
     id: 7,
-    name: "DENR Philippines",
-    logo: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&auto=format&fit=crop&q=60",
-    description: "Environmental protection and natural resources management.",
-    category: "Government",
+    name: "KA8NOS ENVIRONMENTAL, INC.",
+    logo: parter7,
+    description: "KA8NOS Environmental, Inc. is a leading provider of environmental solutions.",
+    category: "ENDURALAND",
   },
   {
     id: 8,
-    name: "Asian Development Bank",
-    logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=200&auto=format&fit=crop&q=60",
-    description: "Funding partnerships for sustainable infrastructure projects.",
-    category: "Finance",
+    name: "DEVELOPMENT CORPORATION",
+    logo: parter8,
+    description: "Development Corporation is committed to sustainable growth and community development.",
+    category: "CIUDADES",
   },
 ];
 
@@ -76,7 +84,12 @@ const CorporatePartners = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80">
+      <section className="
+          relative 
+          py-20 
+          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/partners.png')]
+          bg-cover bg-center from-primary to-primary/80
+        ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">
             <span className="text-sm font-heading font-semibold tracking-widest opacity-80">PARTNERSHIPS</span>
