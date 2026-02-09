@@ -2,22 +2,21 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
   company: [
-    { label: "About Us", href: "#about" },
-    { label: "News", href: "#news" },
-    { label: "Sustainability", href: "#sustainability" },
-    { label: "Corporate Governance", href: "#governance" },
+    { label: "About Us", href: "/#about" },
+    { label: "News", href: "/news" },
+    { label: "Sustainability", href: "/sustainability" },
+    { label: "Corporate Partners", href: "/governance" },
   ],
   services: [
-    { label: "Customers", href: "#customers" },
-    { label: "Business Units", href: "#business" },
-    { label: "Investors", href: "#investors" },
-    { label: "Vendors", href: "#vendors" },
+    { label: "Customers", href: "/customers" },
+    { label: "Business Units", href: "/business" },
+    { label: "Investors", href: "/investors" },
   ],
   resources: [
-    { label: "Careers", href: "#careers" },
-    { label: "Contact Us", href: "#contact" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Privacy Policy", href: "#privacy" },
+    { label: "Careers", href: "/careers" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Privacy Policy", href: "/privacy" },
   ],
 };
 
@@ -41,22 +40,22 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-sm">
-              Manila Water Company, Inc. is committed to providing clean, safe water and sanitation services to our customers.
+              Happy Well Company, Inc. is committed to providing clean, safe water and sanitation services to our customers.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <a href="tel:1627" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
                 <Phone className="w-5 h-5" />
-                <span>Hotline: 1627</span>
+                <span>CAVITE HOTLINE: {"(046)402-6759 / (046)546-9175"} MANILA HOTLINE: {"(02)8519-4490"}</span>
               </a>
-              <a href="mailto:info@manilawater.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
+              <a href="mailto:info@happywell.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
                 <Mail className="w-5 h-5" />
-                <span>info@manilawater.com</span>
+                <span>info@happywell.com.ph</span>
               </a>
               <div className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>MWSS Administration Building, Katipunan Road, Balara, Quezon City, Philippines</span>
+                <span>Adriatico Cor. Figueroa St. Phase 2C Bahayang Pag- asa Subd, Bacoor, 4102 Cavite</span>
               </div>
             </div>
           </div>
@@ -105,7 +104,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © 2026 Manila Water Company, Inc. All rights reserved.
+            © 2026 Happy Well Company, Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-primary-foreground/70 hover:text-secondary transition-colors">

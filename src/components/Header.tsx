@@ -89,13 +89,11 @@ const Header = () => {
               {/* Side Nav Header with Logo */}
               <div className="p-5 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.35 0-6-2.57-6-6.2 0-2.34 1.95-5.44 6-9.14 4.05 3.7 6 6.79 6 9.14 0 3.63-2.65 6.2-6 6.2z"/>
-                    </svg>
+                  <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
+                     <img src={happWellLogo} alt="Happy Well Logo" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-heading font-bold text-base text-white tracking-tight">MANILA WATER</span>
+                    <span className="font-heading font-bold text-base text-white tracking-tight">HAPPY WELL</span>
                     <span className="text-[10px] text-white/60 tracking-widest">CARE IN EVERY DROP</span>
                   </div>
                 </div>

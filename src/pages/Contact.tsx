@@ -32,7 +32,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Office Hours",
-    details: ["Monday - Friday: 8:00 AM - 5:00 PM", "Saturday: 8:00 AM - 12:00 PM"],
+    details: ["Monday - Friday: 8:00 AM - 5:00 PM"],
   },
 ];
 
@@ -172,7 +172,7 @@ const Contact = () => {
               </div>
               <div className="bg-muted rounded-2xl h-80 lg:h-96 flex items-center justify-center overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247264.03927655066!2d120.79782565!3d14.2097863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d8ab29e5b4a9%3A0x3d6d97e9a1b77d7a!2sCavite%2C%20Philippines!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.538166822916!2d120.96858557597305!3d14.396111786066355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3cf6aaaaaab%3A0xf5c7f88b1eb7a8c6!2sHappy%20Well%20Management%20%26%20Collection%20Services%2C%20Inc.!5e0!3m2!1sen!2sph!4v1770596706653!5m2!1sen!2sph"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
