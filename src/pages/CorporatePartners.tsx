@@ -10,6 +10,7 @@ import parter5 from "@/assets/partner5.png";
 import parter6 from "@/assets/partner6.png";
 import parter7 from "@/assets/partner7.png";
 import parter8 from "@/assets/partner8.png";
+import partner from "@/assets/partners.png";
 
 const partners = [
   {
@@ -84,11 +85,14 @@ const CorporatePartners = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="
-          relative 
-          py-20 
-          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/partners.png')]
-          bg-cover bg-center from-primary to-primary/80
+      <section  
+        style={{
+          backgroundImage: `linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url(${partner})`
+        }}
+        className="
+            relative 
+            py-20 
+            bg-cover bg-center from-primary to-primary/80
         ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">

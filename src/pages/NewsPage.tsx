@@ -6,6 +6,7 @@ import news1 from "@/assets/news1.jpeg";
 import news2 from "@/assets/news2.jpeg";
 import news3 from "@/assets/news3.jpeg";
 import news4 from "@/assets/news4.jpeg";
+import news from "@/assets/news.png";
 
 const newsArticles = [
   {
@@ -65,10 +66,14 @@ const NewsPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="
-          relative py-20 
-          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/news.png')]
-          bg-cover bg-center from-primary to-primary/80
+      <section  
+        style={{
+          backgroundImage: `linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url(${news})`
+        }}
+        className="
+            relative 
+            py-20 
+            bg-cover bg-center from-primary to-primary/80
         ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">

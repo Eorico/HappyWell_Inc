@@ -2,6 +2,7 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Leaf, Droplets, Recycle, TreePine, Sun, Award } from "lucide-react";
+import sustainability from "@/assets/sustainability.png";
 
 const initiatives = [
   {
@@ -62,10 +63,14 @@ const SustainabilityPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="
-          relative py-20 
-          bg-[linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url('src/assets/sustainability.png')]
-          bg-cover bg-center from-primary to-primary/80
+      <section  
+        style={{
+          backgroundImage: `linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url(${sustainability})`
+        }}
+        className="
+            relative 
+            py-20 
+            bg-cover bg-center from-primary to-primary/80
         ">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center text-primary-foreground">
