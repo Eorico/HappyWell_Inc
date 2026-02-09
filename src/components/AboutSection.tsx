@@ -51,10 +51,12 @@ const AboutSection = () => {
               ))}
             </div>
 
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
-              Read More
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+            <a href="/about">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-semibold">
+                Read More
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import NewsPage from "./pages/NewsPage";
 import CustomersPage from "./pages/CustomersPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import CareersPage from "./pages/CareersPage";
+import AboutPage from "./pages/AboutPage";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/corporate-partners" element={<CorporatePartners />} />
           <Route path="/business-units" element={<BusinessUnitsPage />} />
           <Route path="/contact" element={<Contact />} />
