@@ -138,11 +138,11 @@ const CorporatePartners = () => {
                 key={partner.id}
                 className="bg-card rounded-2xl overflow-hidden shadow-medium hover:shadow-strong transition-shadow duration-300 group"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-48 overflow-hidden bg-muted flex items-center justify-center p-4">
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">

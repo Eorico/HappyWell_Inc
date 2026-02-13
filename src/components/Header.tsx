@@ -63,7 +63,7 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="px-3 py-2 text-xs font-heading font-semibold text-foreground hover:text-primary transition-colors relative group"
+                className="px-3 py-2 text-sm font-heading font-semibold text-foreground hover:text-primary transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />

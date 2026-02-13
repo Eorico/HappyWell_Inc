@@ -1,7 +1,8 @@
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Briefcase, Users, Heart, TrendingUp, MapPin, Clock, ArrowRight } from "lucide-react";
+import ApplicationFormDialog from "@/components/ApplicationFormDialog";
+import { Briefcase, Users, Heart, TrendingUp, MapPin, Clock } from "lucide-react";
 import team from "@/assets/team.png";
 import career from "@/assets/careers.png"
 
@@ -149,9 +150,8 @@ const CareersPage = () => {
 
           <div className="max-w-4xl mx-auto space-y-4">
             {openPositions.map((position) => (
-              <a
+              <div
                 key={position.id}
-                href="#"
                 className="group block bg-card rounded-xl p-6 shadow-medium hover:shadow-strong transition-all duration-300"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -175,12 +175,13 @@ const CareersPage = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-primary font-semibold">
-                    Apply Now
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  <ApplicationFormDialog
+                    positionTitle={position.title}
+                    department={position.department}
+                    location={position.location}
+                  />
                 </div>
-              </a>
+              </div>
             ))}
           </div>
 
