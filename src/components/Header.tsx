@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sheet";
 
 const navItems = [
-  { label: "ABOUT US", href: "/#about" },
+  { label: "ABOUT US", href: "/about" },
   { label: "CUSTOMERS", href: "/customers" },
   { label: "NEWS", href: "/news" },
   { label: "BUSINESS UNITS", href: "/business-units" },

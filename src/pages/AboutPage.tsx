@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Award, Globe, Shield, Users, Target, Heart, Droplets, Building } from "lucide-react";
 import AboutImg from "@/assets/aboutImg.png";
+import about from "@/assets/happyWellBg.png";
 
 const values = [
   { icon: Award, title: "Excellence", description: "We strive for the highest standards in water service delivery, continuously improving our operations and customer experience." },
@@ -33,7 +34,15 @@ const AboutPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80 overflow-hidden">
+      <section  
+        style={{
+          backgroundImage: `linear-gradient(135deg,rgba(5,150,105,0.95),rgba(6,78,59,0.9)),url(${about})`
+        }}
+        className="
+            relative 
+            py-20 
+            bg-cover bg-center from-primary to-primary/80
+        ">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary rounded-full blur-3xl" />
