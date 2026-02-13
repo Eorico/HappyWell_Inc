@@ -145,6 +145,29 @@ const NewsPage = () => {
             </div>
           </div>
 
+      {/* Facebook Feed Section */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <span className="text-sm font-heading font-semibold text-primary tracking-widest">SOCIAL MEDIA</span>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
+                Latest from Facebook
+              </h2>
+              <p className="text-muted-foreground mt-2">Follow us on <a href="https://www.facebook.com/happywellph" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Facebook</a> for real-time updates</p>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-full max-w-lg rounded-2xl overflow-hidden shadow-medium bg-card">
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhappywellph&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                  width="500"
+                  height="600"
+                  className="w-full border-none overflow-hidden"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* All News Grid */}
           <div className="text-center mb-8">
             <span className="text-sm font-heading font-semibold text-primary tracking-widest">ALL NEWS</span>
