@@ -155,7 +155,7 @@ const NewsPage = () => {
               <p className="text-muted-foreground mt-2">Follow us on <a href="https://www.facebook.com/happywellph" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Facebook</a> for real-time updates</p>
             </div>
             <div className="flex justify-center">
-              <div className="w-full max-w-3xl rounded-2xl overflow-hidden shadow-medium bg-card">
+              <div className="w-full max-w-lg rounded-2xl overflow-hidden shadow-medium bg-card">
                 <iframe
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhappywellph&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                   width="500"
